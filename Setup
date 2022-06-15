@@ -11,15 +11,21 @@ userName="polylinuxgame"
 newPass="Password1"
 useradd -p $newPass -m $userName
 
-bash touchLevel.sh
-bash mkdirLevel.sh
-bash cpMvLevel.sh
-bash rmLevel.sh
+bash lslevel.sh
+bash pwdlevel.sh
+bash catlevel.sh
+bash cdlevel.sh
+bash findlevel.sh
+bash lesslevel.sh
+bash morelevel.sh
 
-rm touchLevel.sh
-rm mkdirLevel.sh
-rm cpMvLevel.sh
-rm rmLevel.sh
+rm lslevel.sh
+rm pwdlevel.sh
+rm catlevel.sh
+rm cdlevel.sh
+rm findlevel.sh
+rm lesslevel.sh
+rm morelevel.sh
 rm -rf dictionaries
 rm README.md
 rm userHash.txt
