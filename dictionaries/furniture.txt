@@ -1,0 +1,16 @@
+chair
+desk
+couch
+tabke
+rug
+bed
+bench
+lamp
+recliner
+dresser
+nightstand
+cabinet
+end table
+rocking chair
+sofa
+bookshelf
