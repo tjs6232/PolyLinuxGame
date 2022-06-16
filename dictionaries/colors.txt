@@ -1,0 +1,16 @@
+White
+Yellow
+Blue
+Red
+Green
+Black
+Brown
+Silver
+Gold
+Gray
+Pink
+Teal
+Cyan
+Purple
+Maroon
+Magenta
