@@ -33,12 +33,12 @@ rm /home/polylinuxgame/level2Verify.sh
 rm /home/polylinuxgame/level3Verify.sh
 rm /home/polylinuxgame/level4Verify.sh
 rm -rf /root/PolyLinuxGame
-#cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
+cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 chown -R $userName /home/polylinuxgame
 
 clear
 
-#rm setup.sh
+rm setup.sh
 echo "Done!" 
 echo "***************************************"
 echo "*   Welcome to The PolyLinux Game     *"
