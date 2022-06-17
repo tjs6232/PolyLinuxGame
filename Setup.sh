@@ -28,10 +28,10 @@ rm -rf dictionaries
 rm README.md
 rm userHash.txt
 cp -r /root/PolyLinuxGame/* /home/$userName/
-rm /home/polylinuxgame/level1Verify.sh
-rm /home/polylinuxgame/level2Verify.sh
-rm /home/polylinuxgame/level3Verify.sh
-rm /home/polylinuxgame/level4Verify.sh
+#rm /home/polylinuxgame/level1Verify.sh
+#rm /home/polylinuxgame/level2Verify.sh
+#rm /home/polylinuxgame/level3Verify.sh
+#rm /home/polylinuxgame/level4Verify.sh
 rm -rf /root/PolyLinuxGame
 #cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 chown -R $userName /home/polylinuxgame
