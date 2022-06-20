@@ -75,9 +75,9 @@ cd ..
 mv inhere.txt /home/BeaverStadium
 
 echo "***************************************"
-echo "*   Welcome to Level 2 of The PolyLinux Game     *"
+echo "*   Welcome to Level 5 of The PolyLinux Game     *"
 echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate            *"
 echo "***************************************"
-echo "*Use the pwd command to find the password*"
+echo "*Use the find command to find the password in a text document called inhere*"
