@@ -24,7 +24,7 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 touch password.txt
 
-"$USER_HASH" > password.txt
+ echo "$USER_HASH" >> password.txt
 
 
 
