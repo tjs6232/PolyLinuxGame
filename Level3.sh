@@ -22,11 +22,13 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 #Delete all the above once Setup1-5 is complete
 
+USER_HASH > password.txt
+
 mkdir Westgate
 
-mv userID.txt home/Westgate
+mv password.txt home/Westgate
 
-cd Westgate
+
 
 echo "***************************************"
 echo "*   Welcome to Level 3 of The PolyLinux Game     *"
