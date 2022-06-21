@@ -18,24 +18,24 @@ declare -a dict15
 declare -a dict16
 declare -a dict17
 
-readarray -t dict5 <dictionaries/animals.txt
-readarray -t dict16 <dictionaries/bands.txt
-readarray -t dict4 <dictionaries/brands.txt
+readarray -t dict5 <dictionaries/airlines.txt
+readarray -t dict16 <dictionaries/appliances.txt
+readarray -t dict4 <dictionaries/beerBrands.txt
 readarray -t dict3 <dictionaries/candy.txt
-readarray -t dict11 <dictionaries/cars.txt
-readarray -t dict8 <dictionaries/cities.txt
-readarray -t dict15 <dictionaries/college.txt
-readarray -t dict7 <dictionaries/colors.txt
-readarray -t dict10 <dictionaries/countries.txt
-readarray -t dict9 <dictionaries/fastfood.txt
-readarray -t dict6 <dictionaries/fruits.txt
-readarray -t dict12 <dictionaries/furniture.txt
-readarray -t dict2 <dictionaries/instruments.txt
-readarray -t dict1 <dictionaries/sports.txt
-readarray -t dict14 <dictionaries/subjects.txt
-readarray -t dict13 <dictionaries/vegetables.txt
+readarray -t dict11 <dictionaries/carBrands.txt
+readarray -t dict8 <dictionaries/cheese.txt
+readarray -t dict15 <dictionaries/cities.txt
+readarray -t dict7 <dictionaries/clothingBrands.txt
+readarray -t dict10 <dictionaries/instruments.txt
+readarray -t dict9 <dictionaries/countries.txt
+readarray -t dict6 <dictionaries/dogBreeds.txt
+readarray -t dict12 <dictionaries/fruits.txt
+readarray -t dict2 <dictionaries/operatingSystems.txt
+readarray -t dict1 <dictionaries/seasonings.txt
+readarray -t dict14 <dictionaries/sports.txt
+readarray -t dict13 <dictionaries/fastFood.txt
 
-readarray -t dict17 <dictionaries/signal.txt
+readarray -t dict17 <dictionaries/createdDirectoryDictionary.txt
 
 # https://stackoverflow.com/questions/22466704/assign-each-line-of-file-to-be-a-variable
 # Thereafter, you can refer to the lines by number. The first line is "${lines[0]}" and the second is "${lines[1]}", etc.
@@ -139,14 +139,14 @@ mkdir level1/$dir14
 mkdir level1/$dir15
 mkdir level1/$dir16
 
-#cp level1Verify.sh level1/
+cp level1Verify.sh level1/
 
 
-#createdFile=$(echo -n "${dict17[$createdFileSeed]}")
-#echo "*"
-#echo "*"
-#echo "*"
-#echo "Please use the "cd" command to change to the 'level1' directory and create a new file named $createdFile.txt in the $targetDirectory directory" >> level1/README
-#echo "Once finished, run the verify.sh script." >> level1/README
+createdFile=$(echo -n "${dict17[$createdFileSeed]}")
+echo "*"
+echo "*"
+echo "*"
+echo "Please change to the 'level1' directory and create a new file named $createdFile.txt in the $targetDirectory directory" >> level1/README
+echo "Once finished, run the verify.sh script." >> level1/README
 #cat level1/README
-#rm directoryList.txt
+rm directoryList.txt
