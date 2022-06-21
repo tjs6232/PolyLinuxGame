@@ -22,11 +22,8 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 #Delete all the above once Setup1-5 is complete
 
-USER_HASH > password.txt
+"$USER_HASH" > password.txt
 
-mkdir Westgate
-
-mv password.txt home/Westgate
 
 
 
