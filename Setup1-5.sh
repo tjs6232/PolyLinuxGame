@@ -24,8 +24,6 @@ rm level1.sh
 rm level2.sh
 rm level3.sh
 rm level4.sh
-rm -rf dictionaries
-rm README.md
 rm userHash.txt
 cp -r /root/PolyLinuxGame/* /home/$userName/
 #rm /home/polylinuxgame/level1Verify.sh
@@ -38,7 +36,9 @@ chown -R $userName /home/polylinuxgame
 
 clear
 
-#rm setup.sh
+rm setup.sh
+
+
 echo "Done!" 
 echo "***************************************"
 echo "*   Welcome to The PolyLinux Game     *"
@@ -46,4 +46,5 @@ echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate              *"
 echo "***************************************"
+
 su -l $userName
