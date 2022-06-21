@@ -139,14 +139,14 @@ mkdir level1/$dir14
 mkdir level1/$dir15
 mkdir level1/$dir16
 
-cp level1Verify.sh level1/
+#cp level1Verify.sh level1/
 
 
 createdFile=$(echo -n "${dict17[$createdFileSeed]}")
 echo "*"
 echo "*"
 echo "*"
-echo "Please change to the 'level1' directory and create a new file named $createdFile.txt in the $targetDirectory directory" >> level1/README
-echo "Once finished, run the verify.sh script." >> level1/README
+echo "Please change to the 'level1' directory and Use the commands learned to find the Password" >> level1/README
+#echo "Once finished, run the verify.sh script." >> level1/README
 #cat level1/README
 rm directoryList.txt
