@@ -22,7 +22,10 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 #Delete all the above once Setup1-5 is complete
 
+touch password.txt
+
 "$USER_HASH" > password.txt
+
 
 
 
