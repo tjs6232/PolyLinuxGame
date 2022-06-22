@@ -24,7 +24,7 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 mkdir BeaverStadium
 
-cd Beaver Stadium
+cd BeaverStadium
 
 mkdir OldMain
 
