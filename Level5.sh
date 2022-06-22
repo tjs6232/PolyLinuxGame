@@ -22,57 +22,18 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 #Delete all the above once Setup1-5 is complete
 
-mkdir OldMain
-cd OldMain
-touch Bell
-touch Door
-touch Presidents
-touch Office
+mkdir Delta
+cd Delta
+mkdir Passenger
 cd ..
+mkdir Spirit
+mkdir American
+mkdir SouthWest
+mkdir Frontier
 
-mkdir BeaverStadium
 
-mkdir TheHub
-cd TheHub
-touch Fish
-touch Food
-touch Lawn
-touch Rooms
-cd ..
 
-mkdir Arboretum
-cd Arboretum
-touch Flowers
-touch Walking
-touch Birds
-touch Water
-cd ..
-
-mkdir Pegula
-cd Pegula
-touch Hockey
-touch Players
-touch Ice
-touch Arena
-cd ..
-
-mkdir HappyValley
-cd Happy Valley
-touch bars
-touch people
-touch football
-touch students
-cd ..
-
-mkdir WestGate
-cd Westgate
-touch Computers
-touch Cybertorium
-touch Professors
-touch ClassRooms
-cd ..
-
-mv inhere.txt /home/BeaverStadium
+mv inhere.txt passenger
 
 echo "***************************************"
 echo "*   Welcome to Level 5 of The PolyLinux Game     *"
