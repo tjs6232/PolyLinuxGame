@@ -15,11 +15,26 @@ userName="polylinuxgame"
 newPass="Password1"
 useradd -p $newPass -m $userName
 
+mkdir level1
+cd level1
 bash level1.sh
+cd ..
+mkdir level2
+cd level2
 bash level2.sh
+cd ..
+mkdir level3
+cd level3
 bash level3.sh
+cd ..
+mkdir level4
+cd level4
 bash level4.sh
+cd ..
+mkdir level5
+cd level5
 bash level5.sh
+cd ..
 
 rm level1.sh
 rm level2.sh
