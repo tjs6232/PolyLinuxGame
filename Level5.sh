@@ -35,8 +35,7 @@ mkdir SouthWest
 mkdir Frontier
 
 
-
-mv inhere.txt /PolylinuxGame/Delta/Passenger
+inhere.txt >> Delta
 
 echo "***************************************"
 echo "*   Welcome to Level 5 of The PolyLinux Game     *"
