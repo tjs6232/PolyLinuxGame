@@ -56,6 +56,7 @@ rm setup.sh
 echo "Done!" 
 echo "***************************************"
 echo "*   Welcome to The PolyLinux Game     *"
+echo "* Use the cd command to switch Levels *"
 echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate              *"
