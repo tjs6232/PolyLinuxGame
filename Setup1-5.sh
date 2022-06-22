@@ -52,6 +52,7 @@ clear
 
 rm setup.sh
 
+bash mover.sh
 
 echo "Done!" 
 echo "***************************************"
