@@ -55,7 +55,7 @@ chown -R $userName /home/polylinuxgame
 
 clear
 
-rm setup.sh
+#rm Setup1-5.sh
 
 
 echo "Done!" 
