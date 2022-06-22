@@ -36,12 +36,12 @@ cd level5
 bash level5.sh
 cd ..
 
-rm level1.sh
-rm level2.sh
-rm level3.sh
-rm level4.sh
-rm level5.sh
-rm userHash.txt
+#rm level1.sh
+#rm level2.sh
+#rm level3.sh
+#rm level4.sh
+#rm level5.sh
+#rm userHash.txt
 cp -r /root/PolyLinuxGame/* /home/$userName/
 
 rm -rf /root/PolyLinuxGame
