@@ -16,7 +16,7 @@ echo "Enter your PSU email (xyz1234@psu.edu): "
 
 read USER_ID
 
-echo -n "$USER_ID" > inhere.txt
+#echo -n "$USER_ID" > inhere.txt
 
 USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
