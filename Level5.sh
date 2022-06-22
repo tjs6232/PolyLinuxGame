@@ -22,12 +22,12 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 #Delete all the above once Setup1-5 is complete
 
-touch inhere.txt
-echo "$USER_HASH" >> inhere.txt
+
 
 mkdir Delta
 cd Delta
-mkdir Passenger
+touch inhere.txt
+echo "$USER_HASH" >> inhere.txt
 cd ..
 mkdir Spirit
 mkdir American
@@ -35,7 +35,7 @@ mkdir SouthWest
 mkdir Frontier
 
 
-inhere.txt >> Delta
+
 
 echo "***************************************"
 echo "*   Welcome to Level 5 of The PolyLinux Game     *"
