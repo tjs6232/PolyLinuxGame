@@ -32,6 +32,8 @@ cd OldMain
 
 mkdir "$USER_HASH"
 
+cd "$USER_HASH"
+
 
 
 echo "***************************************"
