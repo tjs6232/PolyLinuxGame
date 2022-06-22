@@ -16,6 +16,9 @@ newPass="Password1"
 useradd -p $newPass -m $userName
 
 mkdir level1
+
+mv level1.sh /home/PolyLinuxGame/level1
+
 cd level1
 bash level1.sh
 cd ..
