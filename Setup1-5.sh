@@ -16,22 +16,27 @@ newPass="Password1"
 useradd -p $newPass -m $userName
 
 mkdir level1
+mv level1.sh ~/level1
 cd level1
 bash level1.sh
 cd ..
 mkdir level2
+mv level2.sh ~/level2
 cd level2
 bash level2.sh
 cd ..
 mkdir level3
+mv level3.sh ~/level3
 cd level3
 bash level3.sh
 cd ..
 mkdir level4
+mv level4.sh ~/level4
 cd level4
 bash level4.sh
 cd ..
 mkdir level5
+mv level5.sh ~/level5
 cd level5
 bash level5.sh
 cd ..
@@ -52,7 +57,6 @@ clear
 
 rm setup.sh
 
-bash mover.sh
 
 echo "Done!" 
 echo "***************************************"
