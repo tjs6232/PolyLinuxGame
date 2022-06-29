@@ -15,37 +15,31 @@ userName="polylinuxgame"
 newPass="Password1"
 useradd -p $newPass -m $userName
 
-mkdir level1
-mv level1.sh ~/level1
-cd level1
 bash level1.sh
-cd ..
-mkdir level2
-mv level2.sh ~/level2
-cd level2
-bash level2.sh
-cd ..
-mkdir level3
-mv level3.sh ~/level3
-cd level3
-bash level3.sh
-cd ..
-mkdir level4
-mv level4.sh ~/level4
-cd level4
-bash level4.sh
-cd ..
-mkdir level5
-mv level5.sh ~/level5
-cd level5
-bash level5.sh
-cd ..
 
-#rm level1.sh
-#rm level2.sh
-#rm level3.sh
-#rm level4.sh
-#rm level5.sh
+cd /home/$userName
+
+bash level2.sh
+
+cd /home/$userName
+
+bash level3.sh
+
+cd /home/$userName
+
+bash level4.sh
+
+cd /home/$userName
+
+bash level5.sh
+
+cd /home/$userName
+
+rm level1.sh
+rm level2.sh
+rm level3.sh
+rm level4.sh
+rm level5.sh
 #rm userHash.txt
 cp -r /root/PolyLinuxGame/* /home/$userName/
 
