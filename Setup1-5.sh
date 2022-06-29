@@ -48,10 +48,11 @@ rm level2test.sh
 rm level3test.sh
 rm level4test.sh
 rm level5test.sh
-rm level6.sh
-rm level7.sh
-rm level8.sh
-rm level9.sh
+rm Level6.sh
+rm Level7.sh
+rm Level8.sh
+rm Level9.sh
+rm test.sh
 rm currentDate.txt
 
 
