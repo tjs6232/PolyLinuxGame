@@ -40,14 +40,24 @@ rm level2.sh
 rm level3.sh
 rm level4.sh
 rm level5.sh
+#delete below after show
 rm Setup1-5.sh
 rm Setup6-10.sh
+rm level1test.sh
 rm level2test.sh
 rm level3test.sh
 rm level4test.sh
 rm level5test.sh
+rm level6.sh
+rm level7.sh
+rm level8.sh
+rm level9.sh
+rm currentDate.txt
 
-#rm userHash.txt
+
+rm userHash.txt
+rm userID.txt
+
 cp -r /root/PolyLinuxGame/* /home/$userName/
 
 rm -rf /root/PolyLinuxGame
