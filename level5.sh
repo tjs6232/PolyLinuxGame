@@ -18,7 +18,7 @@ cd level5
 mkdir Delta
 cd Delta
 touch inhere.txt
-echo "$USER_HASH" >> inhere.txt
+echo "$level_HASH" >> inhere.txt
 cd ..
 mkdir Spirit
 mkdir American
