@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set and confirm inputs
-levelPassword="basic1password"
-levelToBuild="basic1"
+levelPassword="basic4password"
+levelToBuild="basic4"
 readMeLocation=$levelToBuild"/README.txt"
 
 level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+')
