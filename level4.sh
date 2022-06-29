@@ -1,4 +1,6 @@
+mkdir level4
 
+cd level4
 
 mkdir OldMain
 cd OldMain
