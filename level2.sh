@@ -21,9 +21,9 @@ mkdir OldMain
 
 cd OldMain
 
-mkdir "$USER_HASH"
+mkdir "$level_HASH"
 
-cd "$USER_HASH"
+cd "$level_HASH"
 
 
 
