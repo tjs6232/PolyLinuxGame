@@ -1,3 +1,6 @@
+mkdir level2
+
+cd level2
 
 mkdir BeaverStadium
 
