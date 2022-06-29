@@ -16,7 +16,7 @@ mkdir OldMain
 cd OldMain
 touch Bell
 touch Door
-touch "$USER_HASH"
+touch "$level_HASH"
 touch Presidents
 touch Office
 cd ..
