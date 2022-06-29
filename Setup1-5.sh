@@ -40,6 +40,13 @@ rm level2.sh
 rm level3.sh
 rm level4.sh
 rm level5.sh
+rm Setup1-5.sh
+rm Setup6-10.sh
+rm level2test.sh
+rm level3test.sh
+rm level4test.sh
+rm level5test.sh
+
 #rm userHash.txt
 cp -r /root/PolyLinuxGame/* /home/$userName/
 
