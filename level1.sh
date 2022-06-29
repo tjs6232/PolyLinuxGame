@@ -1,4 +1,6 @@
+mkdir level1
 
+cd level1
 
 mkdir "$USER_HASH"
 
