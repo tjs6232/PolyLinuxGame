@@ -25,6 +25,9 @@ mkdir American
 mkdir SouthWest
 mkdir Frontier
 
+#add more target data
+#add notinhere text
+#cut hash to 8 characters
 
 
 
