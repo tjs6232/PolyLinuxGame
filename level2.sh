@@ -9,9 +9,9 @@ level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | gre
 
 
 #Create Level Content
-mkdir level5
+mkdir level2
 
-cd level5
+cd level2
 
 
 
@@ -21,10 +21,21 @@ touch inhere.txt
 echo "$level_HASH" >> inhere.txt
 cd ..
 mkdir Spirit
+cd Spirit
+touch notinhere.txt
+cd ..
 mkdir American
+cd American
+touch notinhere.txt
+cd ..
 mkdir SouthWest
+cd SouthWest
+touch notinhere.txt
+cd ..
 mkdir Frontier
-
+cd Frontier
+touch notinhere.txt
+cd ..
 #add more target data
 #add notinhere text
 #cut hash to 8 characters
