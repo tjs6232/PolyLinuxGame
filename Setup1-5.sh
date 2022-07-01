@@ -8,8 +8,8 @@ USER_ID=""
 echo "Enter your PSU email (xyz1234@psu.edu): "
 read USER_ID
 echo -n "$USER_ID" > userID.txt
-USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum | base64 | cut -c 1-8)
-#echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/inhere.txt
+USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
+
 
 userName="polylinuxgame"
 newPass="Password1"
