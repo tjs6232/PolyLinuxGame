@@ -23,3 +23,7 @@ mkdir OldMain
 cd OldMain
 
 mkdir "$level_HASH"
+
+cd "$level_HASH"
+
+PS1=">"
