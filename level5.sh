@@ -1,35 +1,34 @@
 #!/bin/bash
 
 #set and confirm inputs
-levelPassword="basic5password"
-levelToBuild="basic15"
+levelPassword="basic2password"
+levelToBuild="basic12"
 readMeLocation=$levelToBuild"/README.txt"
 
 level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+')
 
+#Create level contents
 
-#Create Level Content
-mkdir level5
+mkdir level2
 
-cd level5
+cd level2
 
+mkdir BeaverStadium
 
+cd BeaverStadium
 
-mkdir Delta
-cd Delta
-touch inhere.txt
-echo "$level_HASH" >> inhere.txt
-cd ..
-mkdir Spirit
-mkdir American
-mkdir SouthWest
-mkdir Frontier
+mkdir OldMain
 
-#add more target data
-#add notinhere text
-#cut hash to 8 characters
+cd OldMain
 
+mkdir "$level_HASH"
 
+cd "$level_HASH"
+
+#PS1=">" removes the good stuff
+#strip the hash to just 8 characters
+#increase target data
+#playme script
 
 echo "***************************************"
 echo "*   Welcome to Level 5 of The PolyLinux Game     *"
@@ -37,4 +36,5 @@ echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate            *"
 echo "***************************************"
-echo "*Use the find command to find the password in a text document called inhere*"
+echo "*Use the pwd command to find the password*"
+
