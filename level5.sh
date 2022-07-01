@@ -23,7 +23,7 @@ cd OldMain
 
 mkdir "$level_HASH"
 
-cd "$level_HASH"
+
 
 #PS1=">" removes the good stuff
 #strip the hash to just 8 characters
