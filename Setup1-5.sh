@@ -73,10 +73,9 @@ clear
 echo "Done!" 
 echo "***************************************"
 echo "*          Welcome to The PolyLinux Game     *"
-echo "*      Use the ls command to discover Levels     *"
-echo "*      Then use the cd command to start levels  *"
-echo "*    after level 1 there will be a readme file on how to play the levels  *"
-echo "*    You created this session on:     *"
+echo "*      Type cd level1 to begin the game     *"
+echo "*   Then type cat README.txt to find out how to play  *"
+echo "*         You created this session on:     *"
 echo "*             $currentDate              *"
 echo "***************************************"
 
