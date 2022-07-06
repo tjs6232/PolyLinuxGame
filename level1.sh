@@ -13,11 +13,17 @@ mkdir level1
 
 cd level1
 
+#create readme.txt
+touch README.txt
+
+echo "***************************************" >> README.txt
+echo "*   Welcome to Level 1 of The PolyLinux Game     *" >> README.txt
+echo "*             Good Luck!              *" >> README.txt
+echo "*    You created this session on:     *" >> README.txt
+echo "*             $currentDate            *" >> README.txt
+echo "***************************************" >> README.txt
+echo "*Use the ls command to find the password*" >> README.txt
+
 mkdir "$level_HASH"
 
 
-echo "*" > $readMeLocation
-echo "*" >> $readMeLocation
-echo "*" >> $readMeLocation
-echo "Use the ls command to find the password for this level" >> $readMeLocation
-echo "The contents will be the password for this level." >>$readMeLocation
