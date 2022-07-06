@@ -12,18 +12,22 @@ mkdir level3
 
 cd level3
 
+#create readme.txt
+touch README.txt
+
+echo "***************************************" >> README.txt
+echo "*   Welcome to Level 2 of The PolyLinux Game     *" >> README.txt
+echo "*             Good Luck!              *" >> README.txt
+echo "*    You created this session on:     *" >> README.txt
+echo "*             $currentDate            *" >> README.txt
+echo "***************************************" >> README.txt
+echo "*Use the cat command to find the password indside a text document*" >> README.txt
+
+
+
 touch password.txt
+touch notinhere.txt
+touch PennState.txt
+touch Westgate
 
  echo "$level_HASH" >> password.txt
-
-
-
-
-
-echo "***************************************"
-echo "*   Welcome to Level 3 of The PolyLinux Game     *"
-echo "*             Good Luck!              *"
-echo "*    You created this session on:     *"
-echo "*             $currentDate            *"
-echo "***************************************"
-echo "*Use the cat command on the file userID to find the password*"
