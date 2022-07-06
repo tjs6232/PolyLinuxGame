@@ -13,7 +13,19 @@ mkdir level2
 
 cd level2
 
+#Create the README.txt
+touch README.txt
 
+echo "***************************************" >> README.txt
+echo "*   Welcome to Level 2 of The PolyLinux Game     *" >> README.txt
+echo "*             Good Luck!              *" >> README.txt
+echo "*    You created this session on:     *" >> README.txt
+echo "*             $currentDate            *" >> README.txt
+echo "***************************************" >> README.txt
+echo "*Use the find command to find the password in a text document called inhere*" >> README.txt
+
+#Go back to start and create content
+cd ..
 
 mkdir Delta
 cd Delta
@@ -36,9 +48,9 @@ mkdir Frontier
 cd Frontier
 touch notinhere.txt
 cd ..
-#add more target data
-#add notinhere text
-#cut hash to 8 characters
+
+
+
 
 
 
