@@ -1,41 +1,40 @@
 #!/bin/bash
 
-#trap ' ' 2 20
+#set and confirm inputs
+levelPassword="basic5password"
+levelToBuild="basic5"
+readMeLocation=$levelToBuild"/README.txt"
 
-rc-update delete hwclock boot
+level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+' | base64 | cut -c 1-8)
 
-rc-service hwclock restart
+#Create level contents
 
-date +"%Y-%m-%d" > currentDate.txt
+mkdir level2
 
-currentDate=$(head -n 1 currentDate.txt)
+cd level2
 
-USER_ID=""
+mkdir BeaverStadium
 
-echo "Enter your PSU email (xyz1234@psu.edu): "
+cd BeaverStadium
 
-read USER_ID
+mkdir OldMain
 
-echo -n "$USER_ID" > userID.txt
+cd OldMain
 
-USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
+mkdir "$level_HASH"
 
-#Delete all the above once Setup1-5 is complete
+cd "$level_HASH"
 
+mkdir youarehere
 
+cd youarehere
 
-mkdir Delta
-cd Delta
-touch inhere.txt
-echo "$USER_HASH" >> inhere.txt
-cd ..
-mkdir Spirit
-mkdir American
-mkdir SouthWest
-mkdir Frontier
+PS1=">"
 
-
-
+#PS1=">" removes the good stuff
+#strip the hash to just 8 characters
+#increase target data
+#playme script
 
 echo "***************************************"
 echo "*   Welcome to Level 5 of The PolyLinux Game     *"
@@ -43,4 +42,4 @@ echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate            *"
 echo "***************************************"
-echo "*Use the find command to find the password in a text document called inhere*"
+echo "*Use the pwd command to find the password*"
