@@ -16,7 +16,7 @@ cd level3
 touch README.txt
 
 echo "***************************************" >> README.txt
-echo "*   Welcome to Level 2 of The PolyLinux Game     *" >> README.txt
+echo "*   Welcome to Level 3 of The PolyLinux Game     *" >> README.txt
 echo "*             Good Luck!              *" >> README.txt
 echo "*    You created this session on:     *" >> README.txt
 echo "*             $currentDate            *" >> README.txt
