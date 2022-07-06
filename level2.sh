@@ -25,7 +25,7 @@ echo "***************************************" >> README.txt
 echo "*Use the find command to find the password in a text document called inhere*" >> README.txt
 
 #Go back to start and create content
-cd ..
+#cd ..
 
 mkdir Delta
 cd Delta
