@@ -200,11 +200,6 @@ cp level1Verify.sh level1/
 
 
 createdFile=$(echo -n "${dict17[$createdFileSeed]}")
-echo "*"
-echo "*"
-echo "*"
-echo "* Level 1 *" >> level1/README
-echo "Create a new file named $createdFile.txt in the $targetDirectory directory" >> level1/README
-echo "Once finished, run the verify.sh script." >> level1/README
+
 #cat level1/README
 rm directoryList.txt
