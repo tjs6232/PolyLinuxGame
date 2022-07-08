@@ -1,5 +1,3 @@
-#!/bin/bash
-
 declare -a dict1
 declare -a dict2
 declare -a dict3
@@ -18,22 +16,22 @@ declare -a dict15
 declare -a dict16
 declare -a dict17
 
-readarray -t dict5 <dictionaries/animals.txt
-readarray -t dict16 <dictionaries/bands.txt
-readarray -t dict4 <dictionaries/Brands.txt
+readarray -t dict5 <dictionaries/airlines.txt
+readarray -t dict16 <dictionaries/appliances.txt
+readarray -t dict4 <dictionaries/colleges.txt
 readarray -t dict3 <dictionaries/candy.txt
-readarray -t dict11 <dictionaries/cars.txt
-readarray -t dict8 <dictionaries/college.txt
+readarray -t dict11 <dictionaries/carBrands.txt
+readarray -t dict8 <dictionaries/cheese.txt
 readarray -t dict15 <dictionaries/cities.txt
-readarray -t dict7 <dictionaries/colors.txt
-readarray -t dict10 <dictionaries/fastfood.txt
+readarray -t dict7 <dictionaries/clothingBrands.txt
+readarray -t dict10 <dictionaries/instruments.txt
 readarray -t dict9 <dictionaries/countries.txt
-readarray -t dict6 <dictionariesfurniture.txt
+readarray -t dict6 <dictionaries/dogBreeds.txt
 readarray -t dict12 <dictionaries/fruits.txt
-readarray -t dict2 <dictionaries/instruments.txt
-readarray -t dict1 <dictionaries/subjects.txt
+readarray -t dict2 <dictionaries/operatingSystems.txt
+readarray -t dict1 <dictionaries/seasonings.txt
 readarray -t dict14 <dictionaries/sports.txt
-readarray -t dict13 <dictionaries/vegetables.txt
+readarray -t dict13 <dictionaries/fastFood.txt
 
 readarray -t dict17 <dictionaries/createdDirectoryDictionary.txt
 
@@ -122,31 +120,91 @@ targetDirectory=$(echo -n "${directoryDict[$targetDirectorySeed]}")
 
 ## create static directories
 mkdir "level1"
-mkdir level1/$dir1
-mkdir level1/$dir2
-mkdir level1/$dir3
-mkdir level1/$dir4
-mkdir level1/$dir5
-mkdir level1/$dir6
-mkdir level1/$dir7
-mkdir level1/$dir8
-mkdir level1/$dir9
-mkdir level1/$dir10
-mkdir level1/$dir11
-mkdir level1/$dir12
-mkdir level1/$dir13
-mkdir level1/$dir14
-mkdir level1/$dir15
-mkdir level1/$dir16
+mkdir level1/"$dir1"
+mkdir level1/"$dir2"
+mkdir level1/"$dir3"
+mkdir level1/"$dir4"
+mkdir level1/"$dir5"
+mkdir level1/"$dir6"
+mkdir level1/"$dir7"
+mkdir level1/"$dir8"
+mkdir level1/"$dir9"
+mkdir level1/"$dir10"
+mkdir level1/"$dir11"
+mkdir level1/"$dir12"
+mkdir level1/"$dir13"
+mkdir level1/"$dir14"
+mkdir level1/"$dir15"
+mkdir level1/"$dir16"
 
-#cp level1Verify.sh level1/
+## pseudorandom
+#secondRANDCapture=$(cut -c 4 userHash.txt)
+#secondRAND=$(echo "ibase=16; $secondRANDCapture" | bc)
+noiseDirectory1=$(echo -n "${directoryDict[10]}")
+noiseDirectory2=$(echo -n "${directoryDict[7]}")
+noiseDirectory3=$(echo -n "${directoryDict[3]}")
+noiseDirectory4=$(echo -n "${directoryDict[13]}")
+
+randDictSeed=$(echo -n "dict$pseudoRAND") ## returns dict2 for example
+#randDictSeed2=$(echo -n "dict$secondRAND") ## returns dict3 for example
+#echo "$randDictSeed"
+#echo "$randDictSeed2"
+
+declare -a randDictSelection
+declare -a dictNumber1
+#declare -a diffDict
+readarray -t randDictSelection < dictionaries/allDirectoryNames.txt
+number1=${randDictSelection[$randDictSeed]}
+#number2=${randDictSelection[$randDictSeed2]}
+readarray -t dictNumber1 < dictionaries/"$number1"
+#readarray -t diffDict < dictionaries/"$number2"
+
+## pick 2 dictionaries, pick 5 strings from first dictionary, pick 1 from second dictionary
+## noise files
+mkdir level1/"$targetDirectory"/"${dictNumber1[6]}"
+mkdir level1/"$targetDirectory"/"${dictNumber1[1]}"
+mkdir level1/"$targetDirectory"/"${dictNumber1[8]}"
+mkdir level1/"$targetDirectory"/"${dictNumber1[3]}"
+mkdir level1/"$targetDirectory"/"${dictNumber1[2]}"
+mkdir level1/"$targetDirectory"/"${dict2[3]}"
+
+mkdir level1/"$noiseDirectory1"/"${dictNumber1[6]}"
+mkdir level1/"$noiseDirectory1"/"${dictNumber1[1]}"
+mkdir level1/"$noiseDirectory1"/"${dictNumber1[8]}"
+mkdir level1/"$noiseDirectory1"/"${dictNumber1[3]}"
+mkdir level1/"$noiseDirectory1"/"${dictNumber1[2]}"
+mkdir level1/"$noiseDirectory1"/"${dict2[3]}"
+#############
+mkdir level1/"$noiseDirectory2"/"${dictNumber1[6]}"
+mkdir level1/"$noiseDirectory2"/"${dictNumber1[1]}"
+mkdir level1/"$noiseDirectory2"/"${dictNumber1[8]}"
+mkdir level1/"$noiseDirectory2"/"${dictNumber1[3]}"
+mkdir level1/"$noiseDirectory2"/"${dictNumber1[2]}"
+mkdir level1/"$noiseDirectory2"/"${dict2[3]}"
+
+mkdir level1/"$noiseDirectory3"/"${dictNumber1[6]}"
+mkdir level1/"$noiseDirectory3"/"${dictNumber1[1]}"
+mkdir level1/"$noiseDirectory3"/"${dictNumber1[8]}"
+mkdir level1/"$noiseDirectory3"/"${dictNumber1[3]}"
+mkdir level1/"$noiseDirectory3"/"${dictNumber1[2]}"
+mkdir level1/"$noiseDirectory3"/"${dict2[3]}"
+
+mkdir level1/"$noiseDirectory4"/"${dictNumber1[6]}"
+mkdir level1/"$noiseDirectory4"/"${dictNumber1[1]}"
+mkdir level1/"$noiseDirectory4"/"${dictNumber1[8]}"
+mkdir level1/"$noiseDirectory4"/"${dictNumber1[3]}"
+mkdir level1/"$noiseDirectory4"/"${dictNumber1[2]}"
+mkdir level1/"$noiseDirectory4"/"${dict2[3]}"
+
+cp level1Verify.sh level1/
 
 
 createdFile=$(echo -n "${dict17[$createdFileSeed]}")
 echo "*"
 echo "*"
 echo "*"
-echo "Please change to the 'level1' directory and Use the commands learned to find the Password" >> level1/README
-#echo "Once finished, run the verify.sh script." >> level1/README
+echo "* Level 1 *" >> level1/README
+echo "Create a new file named $createdFile.txt in the $targetDirectory directory" >> level1/README
+echo "Once finished, run the verify.sh script." >> level1/README
 #cat level1/README
 rm directoryList.txt
