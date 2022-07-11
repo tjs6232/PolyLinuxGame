@@ -21,7 +21,7 @@ echo "*             Good Luck!              *" >> README.txt
 echo "*    You created this session on:     *" >> README.txt
 echo "*             $currentDate            *" >> README.txt
 echo "***************************************" >> README.txt
-echo "*Use the cat command to find the password indside a text document*" >> README.txt
+echo "*Use the cat command to find the password inside a text document*" >> README.txt
 
 
 
