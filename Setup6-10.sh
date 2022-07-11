@@ -9,11 +9,11 @@ echo "Enter your PSU email (xyz1234@psu.edu): "
 read -r USER_ID
 echo -n "$USER_ID" > userID.txt
 USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
-echo -n "$USER_HASH" > userHash.txt
+#echo -n "$USER_HASH" > userHash.txt
 
-userName="polylinuxgame"
-newPass="Password1"
-useradd -p $newPass -m $userName
+#userName="polylinuxgame"
+#newPass="Password1"
+#useradd -p $newPass -m $userName
 
 bash level6.sh
 bash level7.sh
