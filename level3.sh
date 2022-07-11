@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+#ITS NOT A SHABANG ANYMORE.  ITS NOW BIN/SH
 
 #set and confirm inputs
 levelPassword="level3password"
