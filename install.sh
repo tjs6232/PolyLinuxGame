@@ -38,22 +38,22 @@ export origInstallDir=$(pwd)
 # remove each level's install script since we don't need it anymore
 
 echo building level6
-./level6.sh
+bash level6.sh
 cd $origInstallDir
 #rm level6.sh
 
 echo building level7
-./level7.sh
+bash level7.sh
 cd $origInstallDir
 #rm level7.sh
 
 echo building level8
-./level8.sh
+bash level8.sh
 cd $origInstallDir
 #rm level8.sh
 
 echo building level9
-./level9.sh
+bash level9.sh
 cd $origInstallDir
 #rm level9.sh
 
