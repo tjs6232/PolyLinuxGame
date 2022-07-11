@@ -28,6 +28,6 @@ echo "*Use the cat command to find the password inside a text document*" >> READ
 touch password.txt
 touch notinhere.txt
 touch PennState.txt
-touch Westgate
+touch Westgate.txt
 
  echo "$level_HASH" >> password.txt
