@@ -37,54 +37,56 @@ export origInstallDir=$(pwd)
 # Call each level's install script
 # remove each level's install script since we don't need it anymore
 
-echo building basic1
-./basic1.sh
+echo building level6
+./level6.sh
 cd $origInstallDir
-#rm basic1.sh
+#rm level6.sh
 
-echo building basic2
-./basic2.sh
+echo building level7
+./level7.sh
 cd $origInstallDir
-#rm basic2.sh
+#rm level7.sh
 
-echo building basic3
-./basic3.sh
+echo building level8
+./level8.sh
 cd $origInstallDir
-#rm basic3.sh
+#rm level8.sh
 
-echo building basic4
-./basic4.sh
+echo building level9
+./level9.sh
 cd $origInstallDir
-#rm basic4.sh
+#rm level9.sh
 
-echo building basic5
-./basic5.sh
-cd $origInstallDir
+#---------------------------------------------
+
+#echo building basic5
+#./basic5.sh
+#cd $origInstallDir
 #rm basic5.sh
 
-echo building basic6
-./basic6.sh
-cd $origInstallDir
+#echo building basic6
+#./basic6.sh
+#cd $origInstallDir
 #rm basic6.sh
 
-echo building basic7
-./basic7.sh
-cd $origInstallDir
+#echo building basic7
+#./basic7.sh
+#cd $origInstallDir
 #rm basic7.sh
 
-echo building basic8
-./basic8.sh
-cd $origInstallDir
+#echo building basic8
+#./basic8.sh
+#cd $origInstallDir
 #rm basic8.sh
 
-echo building basic9
-./basic9.sh
-cd $origInstallDir
+#echo building basic9
+#./basic9.sh
+#cd $origInstallDir
 #rm basic9.sh
 
-echo building basic10
-./basic10.sh
-cd $origInstallDir
+#echo building basic10
+#./basic10.sh
+#cd $origInstallDir
 #rm basic10.sh
 
 #echo building level1
