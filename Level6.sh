@@ -1,205 +1,54 @@
-declare -a dict1
-declare -a dict2
-declare -a dict3
-declare -a dict4
-declare -a dict5
-declare -a dict6
-declare -a dict7
-declare -a dict8
-declare -a dict9
-declare -a dict10
-declare -a dict11
-declare -a dict12
-declare -a dict13
-declare -a dict14
-declare -a dict15
-declare -a dict16
-declare -a dict17
+#!/bin/sh
 
-readarray -t dict5 <dictionaries/airlines.txt
-readarray -t dict16 <dictionaries/appliances.txt
-readarray -t dict4 <dictionaries/colleges.txt
-readarray -t dict3 <dictionaries/candy.txt
-readarray -t dict11 <dictionaries/carBrands.txt
-readarray -t dict8 <dictionaries/cheese.txt
-readarray -t dict15 <dictionaries/cities.txt
-readarray -t dict7 <dictionaries/clothingBrands.txt
-readarray -t dict10 <dictionaries/instruments.txt
-readarray -t dict9 <dictionaries/countries.txt
-readarray -t dict6 <dictionaries/dogBreeds.txt
-readarray -t dict12 <dictionaries/fruits.txt
-readarray -t dict2 <dictionaries/operatingSystems.txt
-readarray -t dict1 <dictionaries/seasonings.txt
-readarray -t dict14 <dictionaries/sports.txt
-readarray -t dict13 <dictionaries/fastFood.txt
+#set and confirm inputs
+levelPassword="basic3password"
+levelToBuild="basic3"
+readMeLocation=$levelToBuild"/README.txt"
 
-readarray -t dict17 <dictionaries/createdDirectoryDictionary.txt
-
-# https://stackoverflow.com/questions/22466704/assign-each-line-of-file-to-be-a-variable
-# Thereafter, you can refer to the lines by number. The first line is "${lines[0]}" and the second is "${lines[1]}", etc.
-
-pseudoRANDcapture=$(cut -c 5 userHash.txt)
-pseudoRAND=$(echo "ibase=16; $pseudoRANDcapture" | bc)
-
-loc1=$(cut -c 1 userHash.txt)
-loc2=$(cut -c 2 userHash.txt)
-loc3=$(cut -c 3 userHash.txt)
-loc4=$(cut -c 4 userHash.txt)
-loc5=$(cut -c 5 userHash.txt)
-loc6=$(cut -c 6 userHash.txt)
-loc7=$(cut -c 7 userHash.txt)
-loc8=$(cut -c 8 userHash.txt)
-loc9=$(cut -c 9 userHash.txt)
-loc10=$(cut -c 10 userHash.txt)
-loc11=$(cut -c 11 userHash.txt)
-loc12=$(cut -c 12 userHash.txt)
-loc13=$(cut -c 13 userHash.txt)
-loc14=$(cut -c 14 userHash.txt)
-loc15=$(cut -c 15 userHash.txt)
-loc16=$(cut -c 16 userHash.txt)
-loc17=$(cut -c 5 userHash.txt)
-
-dir1Seed=$(echo "ibase=16; $loc1" | bc) 
-dir2Seed=$(echo "ibase=16; $loc2" | bc)
-dir3Seed=$(echo "ibase=16; $loc3" | bc)
-dir4Seed=$(echo "ibase=16; $loc4" | bc)
-dir5Seed=$(echo "ibase=16; $loc5" | bc)
-dir6Seed=$(echo "ibase=16; $loc6" | bc) 
-dir7Seed=$(echo "ibase=16; $loc7" | bc)
-dir8Seed=$(echo "ibase=16; $loc8" | bc)
-dir9Seed=$(echo "ibase=16; $loc9" | bc)
-dir10Seed=$(echo "ibase=16; $loc10" | bc)
-dir11Seed=$(echo "ibase=16; $loc11" | bc) 
-dir12Seed=$(echo "ibase=16; $loc12" | bc)
-dir13Seed=$(echo "ibase=16; $loc13" | bc)
-dir14Seed=$(echo "ibase=16; $loc14" | bc)
-dir15Seed=$(echo "ibase=16; $loc15" | bc)
-dir16Seed=$(echo "ibase=16; $loc16" | bc)
-
-createdFileSeed=$(echo "ibase=16; $loc17" | bc)
-
-dir1=$(echo -n "${dict1[$dir1Seed]}")
-dir2=$(echo -n "${dict2[$dir2Seed]}")
-dir3=$(echo -n "${dict3[$dir3Seed]}")
-dir4=$(echo -n "${dict4[$dir4Seed]}")
-dir5=$(echo -n "${dict5[$dir5Seed]}")
-dir6=$(echo -n "${dict6[$dir6Seed]}")
-dir7=$(echo -n "${dict7[$dir7Seed]}")
-dir8=$(echo -n "${dict8[$dir8Seed]}")
-dir9=$(echo -n "${dict9[$dir9Seed]}")
-dir10=$(echo -n "${dict10[$dir10Seed]}")
-dir11=$(echo -n "${dict11[$dir11Seed]}")
-dir12=$(echo -n "${dict12[$dir12Seed]}")
-dir13=$(echo -n "${dict13[$dir13Seed]}")
-dir14=$(echo -n "${dict14[$dir14Seed]}")
-dir15=$(echo -n "${dict15[$dir15Seed]}")
-dir16=$(echo -n "${dict16[$dir16Seed]}")
-
-echo "$dir1" >> directoryList.txt
-echo "$dir2" >> directoryList.txt
-echo "$dir3" >> directoryList.txt
-echo "$dir4" >> directoryList.txt
-echo "$dir5" >> directoryList.txt
-echo "$dir6" >> directoryList.txt
-echo "$dir7" >> directoryList.txt
-echo "$dir8" >> directoryList.txt
-echo "$dir9" >> directoryList.txt
-echo "$dir10" >> directoryList.txt
-echo "$dir11" >> directoryList.txt
-echo "$dir12" >> directoryList.txt
-echo "$dir13" >> directoryList.txt
-echo "$dir14" >> directoryList.txt
-echo "$dir15" >> directoryList.txt
-echo "$dir16" >> directoryList.txt
-
-declare -a directoryDict
-readarray -t directoryDict <directoryList.txt
-
-targetDirectorySeed=$pseudoRAND
-targetDirectory=$(echo -n "${directoryDict[$targetDirectorySeed]}")
+level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+')
 
 ## create static directories
-mkdir "level1"
-mkdir level1/"$dir1"
-mkdir level1/"$dir2"
-mkdir level1/"$dir3"
-mkdir level1/"$dir4"
-mkdir level1/"$dir5"
-mkdir level1/"$dir6"
-mkdir level1/"$dir7"
-mkdir level1/"$dir8"
-mkdir level1/"$dir9"
-mkdir level1/"$dir10"
-mkdir level1/"$dir11"
-mkdir level1/"$dir12"
-mkdir level1/"$dir13"
-mkdir level1/"$dir14"
-mkdir level1/"$dir15"
-mkdir level1/"$dir16"
+cd /home/$userName
+mkdir $levelToBuild
 
-## pseudorandom
-#secondRANDCapture=$(cut -c 4 userHash.txt)
-#secondRAND=$(echo "ibase=16; $secondRANDCapture" | bc)
-noiseDirectory1=$(echo -n "${directoryDict[10]}")
-noiseDirectory2=$(echo -n "${directoryDict[7]}")
-noiseDirectory3=$(echo -n "${directoryDict[3]}")
-noiseDirectory4=$(echo -n "${directoryDict[13]}")
+#select the dictionary to be used from the first characater in the level_HASH
 
-randDictSeed=$(echo -n "dict$pseudoRAND") ## returns dict2 for example
-#randDictSeed2=$(echo -n "dict$secondRAND") ## returns dict3 for example
-#echo "$randDictSeed"
-#echo "$randDictSeed2"
+firstChar=${level_HASH::1}
+inputFile=$origInstallDir"/dictionaries/dict"$firstChar".txt"
 
-declare -a randDictSelection
-declare -a dictNumber1
-#declare -a diffDict
-readarray -t randDictSelection < dictionaries/allDirectoryNames.txt
-number1=${randDictSelection[$randDictSeed]}
-#number2=${randDictSelection[$randDictSeed2]}
-readarray -t dictNumber1 < dictionaries/"$number1"
-#readarray -t diffDict < dictionaries/"$number2"
+#select the item from the dictionary to be used from the second caracter in the leve_HASH
 
-## pick 2 dictionaries, pick 5 strings from first dictionary, pick 1 from second dictionary
-## noise files
-mkdir level1/"$targetDirectory"/"${dictNumber1[6]}"
-mkdir level1/"$targetDirectory"/"${dictNumber1[1]}"
-mkdir level1/"$targetDirectory"/"${dictNumber1[8]}"
-mkdir level1/"$targetDirectory"/"${dictNumber1[3]}"
-mkdir level1/"$targetDirectory"/"${dictNumber1[2]}"
-mkdir level1/"$targetDirectory"/"${dict2[3]}"
+secondChar=${level_HASH:2:1}
 
-mkdir level1/"$noiseDirectory1"/"${dictNumber1[6]}"
-mkdir level1/"$noiseDirectory1"/"${dictNumber1[1]}"
-mkdir level1/"$noiseDirectory1"/"${dictNumber1[8]}"
-mkdir level1/"$noiseDirectory1"/"${dictNumber1[3]}"
-mkdir level1/"$noiseDirectory1"/"${dictNumber1[2]}"
-mkdir level1/"$noiseDirectory1"/"${dict2[3]}"
-#############
-mkdir level1/"$noiseDirectory2"/"${dictNumber1[6]}"
-mkdir level1/"$noiseDirectory2"/"${dictNumber1[1]}"
-mkdir level1/"$noiseDirectory2"/"${dictNumber1[8]}"
-mkdir level1/"$noiseDirectory2"/"${dictNumber1[3]}"
-mkdir level1/"$noiseDirectory2"/"${dictNumber1[2]}"
-mkdir level1/"$noiseDirectory2"/"${dict2[3]}"
+#Convert the hex to binary, and pull that nth item from the list, save it as "selectedItem"
 
-mkdir level1/"$noiseDirectory3"/"${dictNumber1[6]}"
-mkdir level1/"$noiseDirectory3"/"${dictNumber1[1]}"
-mkdir level1/"$noiseDirectory3"/"${dictNumber1[8]}"
-mkdir level1/"$noiseDirectory3"/"${dictNumber1[3]}"
-mkdir level1/"$noiseDirectory3"/"${dictNumber1[2]}"
-mkdir level1/"$noiseDirectory3"/"${dict2[3]}"
+hexdigits='0 1 2 3 4 5 6 7 8 9 a b c d e f'
+i=0
+for hexdigit in $hexdigits; do
+	if [[ "$hexdigit" = "$secondChar" ]]; then
+		selectedItem=$i
+	fi
+	i=`expr $i + 1`
+done
 
-mkdir level1/"$noiseDirectory4"/"${dictNumber1[6]}"
-mkdir level1/"$noiseDirectory4"/"${dictNumber1[1]}"
-mkdir level1/"$noiseDirectory4"/"${dictNumber1[8]}"
-mkdir level1/"$noiseDirectory4"/"${dictNumber1[3]}"
-mkdir level1/"$noiseDirectory4"/"${dictNumber1[2]}"
-mkdir level1/"$noiseDirectory4"/"${dict2[3]}"
+#create the filename with the nth value from the list
 
-cp level1Verify.sh level1/
+i=0
+while read -r line
+do
+        if [[ $i -eq $selectedItem ]]
+        then
+                filename=$line".txt"
+        fi
+        i=`expr $i + 1`
+done < "$inputFile"
 
+#save the code in the filename
 
-createdFile=$(echo -n "${dict17[$createdFileSeed]}")
+echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/$filename
 
-#cat level1/README
-rm directoryList.txt
+echo "*" > $readMeLocation
+echo "*" >> $readMeLocation
+echo "*" >> $readMeLocation
+echo "Display contents of the only .txt file in this directory except for README.txt." >> $readMeLocation
+echo "The contents will be the password for this level." >>$readMeLocation
