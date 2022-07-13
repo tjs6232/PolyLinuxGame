@@ -8,6 +8,8 @@ readMeLocation=$levelToBuild"/README.txt"
 level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+' | base64 | cut -c 1-8)
 #echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/inhere.txt
 
+echo "can you hear me?"
+
 #Create the Level Contents
 mkdir $levelToBuild
 
