@@ -8,9 +8,9 @@ readMeLocation=$levelToBuild"/README.txt"
 level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | grep -o '^\S\+' | base64 | cut -c 1-8)
 
 #Create level contents
-mkdir level4
+mkdir $levelToBuild
 
-cd level4
+cd $levelToBuild
 
 #create readme.txt
 
