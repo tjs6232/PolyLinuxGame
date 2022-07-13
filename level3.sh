@@ -25,9 +25,11 @@ echo "*Use the cat command to find the password inside a text document*" >> READ
 
 
 
-echo "This is not what you are looking for" > notinhere.txt
-echo "This is not what you are looking for" > PennState.txt
-echo "This is not what you are looking for" > Westgate.txt
+echo "This is not what you are looking for" > Beaver.txt
+echo "This is not what you are looking for" > Atherton.txt
+echo "This is not what you are looking for" > Pollock.txt
+echo "This is not what you are looking for" > Shortlidge.txt
+echo "This is not what you are looking for" > University.txt
 
 
- echo "$level_HASH" > password.txt
+ echo "$level_HASH" > inhere.txt
