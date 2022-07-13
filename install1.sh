@@ -27,31 +27,31 @@ bash level5.sh
 
 
 
-rm level1.sh
-rm level2.sh
-rm level3.sh
-rm level4.sh
-rm level5.sh
+#rm level1.sh
+#rm level2.sh
+#rm level3.sh
+#rm level4.sh
+#rm level5.sh
 #delete below after show
-rm Setup1-5.sh
-rm Setup6-10.sh
-rm level1test.sh
-rm level2test.sh
-rm level3test.sh
-rm level4test.sh
-rm level5test.sh
-rm Level6.sh
-rm Level7.sh
-rm Level8.sh
-rm Level9.sh
-rm test.sh
-rm currentDate.txt
+#rm Setup1-5.sh
+#rm Setup6-10.sh
+#rm level1test.sh
+#rm level2test.sh
+#rm level3test.sh
+#rm level4test.sh
+#rm level5test.sh
+#rm Level6.sh
+#rm Level7.sh
+#rm Level8.sh
+#rm Level9.sh
+#rm test.sh
+#rm currentDate.txt
 
 
-rm userHash.txt
-rm userID.txt
+#rm userHash.txt
+#rm userID.txt
 
-cp -r /root/PolyLinuxGame/* /home/$userName/
+#cp -r /root/PolyLinuxGame/* /home/$userName/
 
 #cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 chown -R $userName /home/polylinuxgame
