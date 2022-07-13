@@ -15,15 +15,15 @@ userName="polylinuxgame"
 newPass="password1"
 useradd -p $newPass -m $userName
 
-bash level1.sh
+./level1.sh
 
-bash level2.sh
+./level2.sh
 
-bash level3.sh
+./level3.sh
 
-bash level4.sh
+./level4.sh
 
-bash level5.sh
+./level5.sh
 
 
 
