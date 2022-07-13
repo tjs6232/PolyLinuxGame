@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #trap ' ' 2 20
 rc-update delete hwclock boot
 rc-service hwclock restart
