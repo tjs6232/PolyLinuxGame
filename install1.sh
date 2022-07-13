@@ -12,28 +12,24 @@ USER_HASH=$(echo -n "$USER_ID$currentDate" | md5sum)
 
 
 userName="polylinuxgame"
-newPass="Password1"
+newPass="password1"
 useradd -p $newPass -m $userName
 
 bash level1.sh
 
-cd /home/$userName
 
 bash level2.sh
 
-cd /home/$userName
 
 bash level3.sh
 
-cd /home/$userName
 
 bash level4.sh
 
-cd /home/$userName
 
 bash level5.sh
 
-cd /home/$userName
+
 
 rm level1.sh
 rm level2.sh
