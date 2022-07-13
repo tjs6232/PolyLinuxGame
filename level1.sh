@@ -9,9 +9,9 @@ level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | gre
 #echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/inhere.txt
 
 #Create the Level Contents
-mkdir level1
+mkdir $levelToBuild
 
-cd level1
+cd $levelToBuild
 
 
 
