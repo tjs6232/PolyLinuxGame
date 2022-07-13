@@ -24,10 +24,20 @@ echo "*Use the cd and ls commands to find the password inside the directories*" 
 
 #create level contents
 
-mkdir OldMain
-cd OldMain
-touch Bell
-touch Door
+#create the first directory
+mkdir Philadelphia
+cd Philadelphia
+touch Art
+touch Buildings
+touch Stadiums
+#--------------------------------------
+mkdir SouthPhilly
+cd South Philly
+touch Food
+touch Italy
+touch People
+
+mkdir 
 touch "$level_HASH"
 touch Presidents
 touch Office
