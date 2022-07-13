@@ -53,7 +53,6 @@ rm userID.txt
 
 cp -r /root/PolyLinuxGame/* /home/$userName/
 
-rm -rf /root/PolyLinuxGame
 #cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 chown -R $userName /home/polylinuxgame
 
