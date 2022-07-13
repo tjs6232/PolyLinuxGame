@@ -11,7 +11,7 @@ level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | md5sum | gre
 #Create the Level Contents
 mkdir $levelToBuild
 
-cd level1
+cd $levelToBuild
 
 
 
