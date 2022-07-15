@@ -26,5 +26,5 @@ echo "*Use the ls -a command to find the password*" >> README.txt
 
 mkdir YouCantSeeMe
 
-echo "$level_HASH" > YouCanSeeMe.txt
+echo "$level_HASH" > .YouCanSeeMe.txt
 
