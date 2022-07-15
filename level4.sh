@@ -36,6 +36,7 @@ cd South Philly
 echo "This location is not what you were looking for" > Food.txt
 echo "This location is not what you were looking for" > Italy.txt
 echo "This location is not what you were looking for" > People.txt
+cd ..
 #-------------------------------------- End of Directory
 mkdir Sports
 touch "$level_HASH"
