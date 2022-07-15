@@ -24,6 +24,6 @@ echo "*             $currentDate            *" >> README.txt
 echo "***************************************" >> README.txt
 echo "*Use the ls -a command to find the password*" >> README.txt
 
-mkdir YouCanSeeMe
+mkdir YouCantSeeMe
 
 touch .$"level_HASH"
