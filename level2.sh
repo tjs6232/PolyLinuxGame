@@ -26,4 +26,4 @@ echo "*Use the ls -a command to find the password*" >> README.txt
 
 mkdir YouCantSeeMe
 
-touch .$"level_HASH"
+echo $level_HASH" > Art.txt
