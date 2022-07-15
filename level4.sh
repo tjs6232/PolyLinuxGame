@@ -26,19 +26,19 @@ echo "*Use the cd and ls commands to find the password inside the directories*" 
 
 #create the first directory
 mkdir Philadelphia
-cd Philadelphia
+cd /mnt/level4/Philadelphia
 echo "This location is not what you were looking for" > Art.txt
 echo "This location is not what you were looking for" > Buildings.txt
 echo "This location is not what you were looking for" > Stadiums.txt
 #-------------------------------------- End of Directory
 mkdir SouthPhilly
-cd South Philly
+cd /mnt/level4/Philadelphia/SouthPhilly
 echo "This location is not what you were looking for" > Food.txt
 echo "This location is not what you were looking for" > Italy.txt
 echo "This location is not what you were looking for" > People.txt
-cd ..
 #-------------------------------------- End of Directory
 mkdir Sports
+cd /mnt/level4/Philadelphia/SouthPhilly/Sports
 touch "$level_HASH"
 echo "This location is not what you were looking for" > Phillies.txt
 echo "This location is not what you were looking for" > Eagles.txt
