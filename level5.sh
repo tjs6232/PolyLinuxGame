@@ -41,6 +41,7 @@ cd South Philly
 echo "This location is not what you were looking for" > Food.txt
 echo "This location is not what you were looking for" > Italy.txt
 echo "This location is not what you were looking for" > People.txt
+#Temporary Point to where I need to be
 cd /mnt/level5
 #-------------------------------------- End of Directory
 mkdir Sports
@@ -49,6 +50,7 @@ echo "This location is not what you were looking for" > Phillies.txt
 echo "This location is not what you were looking for" > Eagles.txt
 echo "This location is not what you were looking for" > 76ers.txt
 echo "This location is not what you were looking for" > Flyers.txt
+#Temporary Point to where I need to be
 cd /mnt/level5
 #-------------------------------------- End of Directory
 mkdir TargetData
