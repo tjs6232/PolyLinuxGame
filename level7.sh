@@ -20,7 +20,7 @@ echo "*             Good Luck!              *" >> README.txt
 echo "*    You created this session on:     *" >> README.txt
 echo "*             $currentDate            *" >> README.txt
 echo "***************************************" >> README.txt
-echo "*Use the find command to discover the password inside of a hidden file*" >> README.txt
+echo "*Use the find command to discover the password inside of a hidden file called inhere.txt*" >> README.txt
 
 #create level contents
 
@@ -56,7 +56,7 @@ cd ..
 mkdir TargetData
 echo "This location is not what you were looking for" > IWonderWhereItIs.txt
 echo "This location is not what you were looking for" > LookCloser.txt
-touch ."$level_HASH"
+echo  ."$level_HASH" > inhere.txt
 echo "This location is not what you were looking for" > ItsInHereSomewhere.txt
 
 cd..
