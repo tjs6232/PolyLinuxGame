@@ -20,7 +20,7 @@ echo "*             Good Luck!              *" >> README.txt
 echo "*    You created this session on:     *" >> README.txt
 echo "*             $currentDate            *" >> README.txt
 echo "***************************************" >> README.txt
-echo "*Use the previous learned commands to find the password inside a hidden text file*" >> README.txt
+echo "*Use the find command to discover the password inside of a file called inhere.txt*" >> README.txt
 
 #create level contents
 
