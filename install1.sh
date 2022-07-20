@@ -25,7 +25,9 @@ useradd -p $newPass -m $userName
 
 ./level5.sh
 
+./level6.sh
 
+./level7.sh
 
 #rm level1.sh
 #rm level2.sh
