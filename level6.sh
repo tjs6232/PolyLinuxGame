@@ -37,7 +37,7 @@ echo "This location is not what you were looking for" > Revan.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir BreakingBad
-cd South Philly
+cd BreakingBad
 echo "This location is not what you were looking for" > Walter.txt
 echo "This location is not what you were looking for" > Gus.txt
 echo "This location is not what you were looking for" > Jessie.txt
@@ -45,7 +45,7 @@ echo "This location is not what you were looking for" > Jessie.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir Comedians
-touch "$level_HASH"
+cd Comedians
 echo "This location is not what you were looking for" > BillBurr.txt
 echo "This location is not what you were looking for" > KevinHart.txt
 echo "This location is not what you were looking for" > Fluffy.txt
@@ -54,9 +54,9 @@ echo "This location is not what you were looking for" > RobinWilliams.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir TargetData
+cd TargetData
 echo "This location is not what you were looking for" > Congrats.txt
 echo "This location is not what you were looking for" > YouFoundIt.txt
 echo "$level_HASH" > inhere.txt
 echo "This location is not what you were looking for" > CatTheFile.txt
-
-cd..
+cd ..
