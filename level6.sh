@@ -29,34 +29,34 @@ echo "*Use the previous learned commands to find the password inside a hidden te
 
 
 #create the first directory
-mkdir Philadelphia
-cd Philadelphia
-echo "This location is not what you were looking for" > Art.txt
-echo "This location is not what you were looking for" > Buildings.txt
-echo "This location is not what you were looking for" > Stadiums.txt
+mkdir StarWars
+cd StarWars
+echo "This location is not what you were looking for" > Vader.txt
+echo "This location is not what you were looking for" > Skywalker.txt
+echo "This location is not what you were looking for" > Revan.txt
 cd ..
 #-------------------------------------- End of Directory
-mkdir SouthPhilly
+mkdir BreakingBad
 cd South Philly
-echo "This location is not what you were looking for" > Food.txt
-echo "This location is not what you were looking for" > Italy.txt
-echo "This location is not what you were looking for" > People.txt
+echo "This location is not what you were looking for" > Walter.txt
+echo "This location is not what you were looking for" > Gus.txt
+echo "This location is not what you were looking for" > Jessie.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
-mkdir Sports
+mkdir Comedians
 touch "$level_HASH"
-echo "This location is not what you were looking for" > Phillies.txt
-echo "This location is not what you were looking for" > Eagles.txt
-echo "This location is not what you were looking for" > 76ers.txt
-echo "This location is not what you were looking for" > Flyers.txt
+echo "This location is not what you were looking for" > BillBurr.txt
+echo "This location is not what you were looking for" > KevinHart.txt
+echo "This location is not what you were looking for" > Fluffy.txt
+echo "This location is not what you were looking for" > RobinWilliams.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
 mkdir TargetData
-echo "This location is not what you were looking for" > IWonderWhereItIs.txt
-echo "This location is not what you were looking for" > LookCloser.txt
-touch ."$level_HASH"
-echo "This location is not what you were looking for" > ItsInHereSomewhere.txt
+echo "This location is not what you were looking for" > Congrats.txt
+echo "This location is not what you were looking for" > YouFoundIt.txt
+echo "$level_HASH" > inhere.txt
+echo "This location is not what you were looking for" > CatTheFile.txt
 
 cd..
