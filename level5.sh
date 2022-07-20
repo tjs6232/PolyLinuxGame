@@ -57,6 +57,6 @@ mkdir TargetData
 cd TargetData
 echo "This location is not what you were looking for" > IWonderWhereItIs.txt
 echo "This location is not what you were looking for" > LookCloser.txt
-touch ."$level_HASH"
+echo "$level_HASH" > .YouFoundMe.txt
 echo "This location is not what you were looking for" > ItsInHereSomewhere.txt
 cd ..
