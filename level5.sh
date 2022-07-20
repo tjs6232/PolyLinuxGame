@@ -37,7 +37,7 @@ echo "This location is not what you were looking for" > Stadiums.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir SouthPhilly
-cd South Philly
+cd SouthPhilly
 echo "This location is not what you were looking for" > Food.txt
 echo "This location is not what you were looking for" > Italy.txt
 echo "This location is not what you were looking for" > People.txt
@@ -45,7 +45,7 @@ echo "This location is not what you were looking for" > People.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir Sports
-touch "$level_HASH"
+cd Sports
 echo "This location is not what you were looking for" > Phillies.txt
 echo "This location is not what you were looking for" > Eagles.txt
 echo "This location is not what you were looking for" > 76ers.txt
@@ -54,6 +54,7 @@ echo "This location is not what you were looking for" > Flyers.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir TargetData
+cd TargetData
 echo "This location is not what you were looking for" > IWonderWhereItIs.txt
 echo "This location is not what you were looking for" > LookCloser.txt
 touch ."$level_HASH"
