@@ -29,35 +29,35 @@ echo "*Use the find command to discover the password inside of a hidden file cal
 
 
 #create the first directory
-mkdir Philadelphia
-cd Philadelphia
+mkdir Bobby
+cd Bobby
+echo "This location is not what you were looking for" > Cats.txt
 echo "This location is not what you were looking for" > Art.txt
-echo "This location is not what you were looking for" > Buildings.txt
-echo "This location is not what you were looking for" > Stadiums.txt
+echo "This location is not what you were looking for" > Pictures.txt
 cd ..
 #-------------------------------------- End of Directory
-mkdir SouthPhilly
-cd SouthPhilly
+mkdir Larissa
+cd Larissa
 echo "This location is not what you were looking for" > Food.txt
 echo "This location is not what you were looking for" > Italy.txt
-echo "This location is not what you were looking for" > People.txt
+echo "This location is not what you were looking for" > Emails.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
-mkdir Sports
-cd Sports
-echo "This location is not what you were looking for" > Phillies.txt
-echo "This location is not what you were looking for" > Eagles.txt
-echo "This location is not what you were looking for" > 76ers.txt
-echo "This location is not what you were looking for" > Flyers.txt
+mkdir Nick
+cd Nick
+echo "This location is not what you were looking for" > Music.txt
+echo "This location is not what you were looking for" > Documents.txt
+echo "This location is not what you were looking for" > Pictures.txt
+echo "This location is not what you were looking for" > Movies.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
-mkdir TargetData
-cd TargetData
+mkdir Kathy
+cd Kathy
 echo "This location is not what you were looking for" > IWonderWhereItIs.txt
 echo "This location is not what you were looking for" > LookCloser.txt
-echo  ."$level_HASH" > inhere.txt
+echo  "$level_HASH" > .inhere.txt
 echo "This location is not what you were looking for" > ItsInHereSomewhere.txt
 
 cd..
