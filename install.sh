@@ -84,7 +84,13 @@ cd $origInstallDir
 
 #--------------------------------------------- Mover
 
-mv level1 level2 level3 level4 level5 level6 level7 -t /home/polylinuxgame
+mv level1 /home/polylinuxgame
+mv level2 /home/polylinuxgame
+mv level3 /home/polylinuxgame
+mv level4 /home/polylinuxgame
+mv level5 /home/polylinuxgame
+mv level6 /home/polylinuxgame
+mv level7 /home/polylinuxgame
 
 #---------------------------------------------
 
