@@ -151,7 +151,7 @@ cd $origInstallDir
 #cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 
 # clean up the ownership the files in the gameplayer's homedir. might need to add a group as well
-chown -R $userName /home/$userName
+#chown -R $userName /home/$userName
 
 #clear
 
@@ -166,5 +166,5 @@ echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate              *"
 echo "***************************************"
-su -l $userName
+#su -l $userName
 #sleep 10
