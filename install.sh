@@ -82,6 +82,10 @@ cd $origInstallDir
 #cd $origInstallDir
 #rm level9.sh
 
+#--------------------------------------------- Mover
+
+mv level1 level2 level3 level4 level5 level6 level7 -t /home/polylinuxgame
+
 #---------------------------------------------
 
 #echo building basic5
