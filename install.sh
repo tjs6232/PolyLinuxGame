@@ -40,42 +40,43 @@ export origInstallDir=$(pwd)
 echo building level1
 ./level1.sh
 cd $origInstallDir
-#rm level6.sh
+level6.sh
 
 echo building level2
 ./level2.sh
 cd $origInstallDir
-#rm level2.sh
+level2.sh
 
 echo building level3
 ./level3.sh
 cd $origInstallDir
-#rm level3.sh
+level3.sh
 
 echo building level4
 ./level4.sh
 cd $origInstallDir
-#rm level4.sh
+level4.sh
 
 echo building level5
 ./level5.sh
 cd $origInstallDir
-#rm level5.sh
+level5.sh
 
 echo building level6
 ./level6.sh
 cd $origInstallDir
-#rm level6.sh
+level6.sh
 
 echo building level7
 ./level7.sh
 cd $origInstallDir
-#rm level7.sh
+level7.sh
 
-echo building level8
-./level8.sh
-cd $origInstallDir
-#rm level8.sh
+#----No Level Yet-----
+#echo building level8
+#./level8.sh
+#cd $origInstallDir
+#level8.sh
 
 #echo building level9
 #./level9.sh
@@ -161,7 +162,7 @@ mv level7 /home/polylinuxgame
 #cp -r /root/PolyLinuxGame/dictionaries /home/$userName/
 
 # clean up the ownership the files in the gameplayer's homedir. might need to add a group as well
-#chown -R $userName /home/$userName
+chown -R $userName /home/$userName
 
 #clear
 
@@ -177,6 +178,6 @@ echo "*    You created this session on:     *"
 echo "*             $currentDate              *"
 echo "***************************************"
 
-cd /home/$userName
-#su -l $userName
+#cd /home/$userName
+su -l $userName
 #sleep 10
