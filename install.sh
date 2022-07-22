@@ -77,9 +77,9 @@ echo building level8
 cd $origInstallDir
 #rm level8.sh
 
-echo building level9
-./level9.sh
-cd $origInstallDir
+#echo building level9
+#./level9.sh
+#cd $origInstallDir
 #rm level9.sh
 
 #---------------------------------------------
