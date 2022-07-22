@@ -29,19 +29,61 @@ echo "*Use the find command to discover the password inside of a file called inh
 
 
 #create the first directory
+mkdir Disney
+cd Disney
+echo "This location is not what you were looking for" > Parks.txt
+echo "This location is not what you were looking for" > Castle.txt
+echo "This location is not what you were looking for" > FireWorks.txt
+#-------------------------------------- Start of Directory Stays in
 mkdir StarWars
 cd StarWars
 echo "This location is not what you were looking for" > Vader.txt
 echo "This location is not what you were looking for" > Skywalker.txt
 echo "This location is not what you were looking for" > Revan.txt
 cd ..
-#-------------------------------------- End of Directory
+#------------------------------------------------- Back in Disney
+mkdir ToyStory
+cd ToyStory
+echo "This location is not what you were looking for" > Buzz.txt
+echo "This location is not what you were looking for" > Woody.txt
+echo "This location is not what you were looking for" > Toys.txt
+cd ..
+#--------------------------------------------------- Back to Disney
+mkdir MonstersInc
+cd MonstersInc
+echo "This location is not what you were looking for" > Mike.txt
+echo "This location is not what you were looking for" > Sully.txt
+echo "This location is not what you were looking for" > Boo.txt
+cd ..
+cd ..
+##--------------------------------------------------- Back to Main Directory
+mkdir Netflix
+cd Netflix
+echo "This location is not what you were looking for" > Movies.txt
+echo "This location is not what you were looking for" > TV.txt
+echo "This location is not what you were looking for" > StandUp.txt
+
+#-------------------------------------- Stay in Netflix
 mkdir BreakingBad
 cd BreakingBad
 echo "This location is not what you were looking for" > Walter.txt
 echo "This location is not what you were looking for" > Gus.txt
 echo "This location is not what you were looking for" > Jessie.txt
-#Temporary Point to where I need to be
+cd ..
+#-------------------------------------- Stay in Netflix
+mkdir Narcos
+cd Narcos
+echo "This location is not what you were looking for" > Steve.txt
+echo "This location is not what you were looking for" > Javier.txt
+echo "This location is not what you were looking for" > Pablo.txt
+cd ..
+#-------------------------------------- Stay in Netflix
+mkdir PeakyBlinders
+cd PeakyBlinders
+echo "This location is not what you were looking for" > Tommy.txt
+echo "This location is not what you were looking for" > Alfie.txt
+echo "This location is not what you were looking for" > Finn.txt
+cd ..
 cd ..
 #-------------------------------------- End of Directory
 mkdir Comedians
