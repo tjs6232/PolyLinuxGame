@@ -176,5 +176,7 @@ echo "*             Good Luck!              *"
 echo "*    You created this session on:     *"
 echo "*             $currentDate              *"
 echo "***************************************"
+
+cd /home/$userName
 #su -l $userName
 #sleep 10
