@@ -40,37 +40,37 @@ export origInstallDir=$(pwd)
 echo building level1
 ./level1.sh
 cd $origInstallDir
-level6.sh
+rm level1.sh
 
 echo building level2
 ./level2.sh
 cd $origInstallDir
-level2.sh
+rm level2.sh
 
 echo building level3
 ./level3.sh
 cd $origInstallDir
-level3.sh
+rm level3.sh
 
 echo building level4
 ./level4.sh
 cd $origInstallDir
-level4.sh
+rm level4.sh
 
 echo building level5
 ./level5.sh
 cd $origInstallDir
-level5.sh
+rm level5.sh
 
 echo building level6
 ./level6.sh
 cd $origInstallDir
-level6.sh
+rm level6.sh
 
 echo building level7
 ./level7.sh
 cd $origInstallDir
-level7.sh
+rm level7.sh
 
 #----No Level Yet-----
 #echo building level8
