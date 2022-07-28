@@ -53,8 +53,8 @@ echo "This location is not what you were looking for" > Flyers.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
-mkdir TargetData
-cd TargetData
+mkdir ArtMuseum
+cd ArtMuseum
 echo "This location is not what you were looking for" > IWonderWhereItIs.txt
 echo "This location is not what you were looking for" > LookCloser.txt
 echo "$level_HASH" > .YouFoundMe.txt
