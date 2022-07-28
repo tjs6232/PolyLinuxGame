@@ -31,16 +31,18 @@ echo "*Use the find command to discover the password inside of a hidden file cal
 #create the first directory
 mkdir Bobby
 cd Bobby
-echo "This location is not what you were looking for" > Cats.txt
-echo "This location is not what you were looking for" > Art.txt
+echo "This location is not what you were looking for" > Music.txt
+echo "This location is not what you were looking for" > Documents.txt
 echo "This location is not what you were looking for" > Pictures.txt
+echo "This location is not what you were looking for" > Videos.txt
 cd ..
 #-------------------------------------- End of Directory
 mkdir Larissa
 cd Larissa
-echo "This location is not what you were looking for" > Food.txt
-echo "This location is not what you were looking for" > Italy.txt
+echo "This location is not what you were looking for" > Documents.txt
+echo "This location is not what you were looking for" > Music.txt
 echo "This location is not what you were looking for" > Emails.txt
+echo "This location is not what you were looking for" > Videos.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
@@ -49,16 +51,16 @@ cd Nick
 echo "This location is not what you were looking for" > Music.txt
 echo "This location is not what you were looking for" > Documents.txt
 echo "This location is not what you were looking for" > Pictures.txt
-echo "This location is not what you were looking for" > Movies.txt
+echo "This location is not what you were looking for" > Videos.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
 mkdir Kathy
 cd Kathy
-echo "This location is not what you were looking for" > IWonderWhereItIs.txt
-echo "This location is not what you were looking for" > LookCloser.txt
+echo "This location is not what you were looking for" > Music.txt
+echo "This location is not what you were looking for" > Pictures.txt
 echo  "$level_HASH" > .inhere.txt
-echo "This location is not what you were looking for" > ItsInHereSomewhere.txt
-
+echo "This location is not what you were looking for" > Documents.txt
+echo "This location is not what you were looking for" > Videos.txt
 cd..
 
