@@ -95,10 +95,10 @@ echo "This location is not what you were looking for" > RobinWilliams.txt
 #Temporary Point to where I need to be
 cd ..
 #-------------------------------------- End of Directory
-mkdir TargetData
-cd TargetData
-echo "This location is not what you were looking for" > Congrats.txt
-echo "This location is not what you were looking for" > YouFoundIt.txt
+mkdir Comedies
+cd Comedies
+echo "This location is not what you were looking for" > FreeGuy.txt
+echo "This location is not what you were looking for" > Minions.txt
 echo "$level_HASH" > inhere.txt
-echo "This location is not what you were looking for" > CatTheFile.txt
+echo "This location is not what you were looking for" > TheOffice.txt
 cd ..
