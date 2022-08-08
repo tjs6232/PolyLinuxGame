@@ -37,61 +37,51 @@ export origInstallDir=$(pwd)
 # Call each level's install script
 # remove each level's install script since we don't need it anymore
 
-echo building level1
-./level1.sh
+echo building TJlevel1
+./TJlevel1.sh
 cd $origInstallDir
-rm level1.sh
+rm TJlevel1.sh
 
-echo building level2
-./level2.sh
+echo building TJlevel2
+./TJlevel2.sh
 cd $origInstallDir
-rm level2.sh
+rm TJlevel2.sh
 
-echo building level3
-./level3.sh
+echo building TJlevel3
+./TJlevel3.sh
 cd $origInstallDir
-rm level3.sh
+rm TJlevel3.sh
 
-echo building level4
-./level4.sh
+echo building TJlevel4
+./TJlevel4.sh
 cd $origInstallDir
-rm level4.sh
+rm TJlevel4.sh
 
-echo building level5
-./level5.sh
+echo building TJlevel5
+./TJlevel5.sh
 cd $origInstallDir
-rm level5.sh
+rm TJlevel5.sh
 
-echo building level6
-./level6.sh
+echo building TJlevel6
+./TJlevel6.sh
 cd $origInstallDir
-rm level6.sh
+rm TJlevel6.sh
 
-echo building level7
-./level7.sh
+echo building TJlevel7
+./TJlevel7.sh
 cd $origInstallDir
-rm level7.sh
+rm TJlevel7.sh
 
-#----No Level Yet-----
-#echo building level8
-#./level8.sh
-#cd $origInstallDir
-#level8.sh
-
-#echo building level9
-#./level9.sh
-#cd $origInstallDir
-#rm level9.sh
 
 #--------------------------------------------- Mover
 
-mv level1 /home/polylinuxgame
-mv level2 /home/polylinuxgame
-mv level3 /home/polylinuxgame
-mv level4 /home/polylinuxgame
-mv level5 /home/polylinuxgame
-mv level6 /home/polylinuxgame
-mv level7 /home/polylinuxgame
+mv TJlevel1 /home/polylinuxgame
+mv TJlevel2 /home/polylinuxgame
+mv TJlevel3 /home/polylinuxgame
+mv TJlevel4 /home/polylinuxgame
+mv TJlevel5 /home/polylinuxgame
+mv TJlevel6 /home/polylinuxgame
+mv TJlevel7 /home/polylinuxgame
 
 #---------------------------------------------
 
